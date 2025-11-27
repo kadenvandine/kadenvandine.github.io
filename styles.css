@@ -1,0 +1,60 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;    /* Centers items vertically */
+    justify-content: space-between; /* Spaces items apart */
+    padding: 20px;
+}
+
+.header-text {
+    text-align: left; /* Aligns text to the left */
+}
+
+.banner img {
+    width: auto; /* Adjust width as needed */
+    height: 400px; /* Keeps the aspect ratio */
+    border-radius: 18px; /* Optional: Adds rounded corners */
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
