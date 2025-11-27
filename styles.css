@@ -138,6 +138,80 @@ img {
     justify-content: center;
 }
 
+/* --- Game List Styling --- */
+.game-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.game-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+    flex-wrap: wrap; /* Allows buttons to drop down on very small phones */
+    gap: 10px;
+}
+
+.game-item:last-child {
+    border-bottom: none;
+}
+
+.game-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.game-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Button Base Style */
+.btn-game {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+/* Specific Button Colors */
+.btn-play {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.btn-play:hover {
+    background-color: white;
+    color: var(--accent-color);
+}
+
+.btn-source {
+    background-color: transparent;
+    border: 1px solid #555;
+    color: var(--text-secondary);
+}
+
+.btn-source:hover {
+    border-color: #fff;
+    color: #fff;
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* SVG Icon sizing */
+.icon {
+    width: 18px;
+    height: 18px;
+}
+
 /* --- 5. Main Content Layout (Flexbox) --- */
 
 /* Mobile Default: Everything stacks vertically automatically because divs are block elements. */
