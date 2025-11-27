@@ -7,32 +7,39 @@ body {
 }
 
 .header-container {
-    display: flex;
-    align-items: center;    /* Centers items vertically */
-    justify-content: space-between; /* Spaces items apart */
     padding: 20px;
+    text-align: center; /* Centers the header text */
 }
 
-.header-text {
-    text-align: left; /* Aligns text to the left */
+.content-container {
+    display: flex; /* Enables flex layout */
+    margin: 20px; /* Adds margin around the content */
 }
 
-.banner img {
-    width: auto; /* Adjust width as needed */
-    height: 400px; /* Keeps the aspect ratio */
-    border-radius: 18px; /* Optional: Adds rounded corners */
+.text-section {
+    flex: 1; /* Takes remaining space for text sections */
+    display: flex;
+    flex-direction: column; /* Stacks bio and interests vertically */
 }
 
-h1, h2 {
-    margin: 10px 0;
-}
-
-section {
-    margin: 20px;
+.bio,
+.interests {
     padding: 20px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space below each section */
+}
+
+.banner {
+    width: 50%; /* Banner takes up half the width */
+}
+
+.banner img {
+    width: 100%; /* Full width of the banner div */
+    height: auto; /* Responsive height */
+    object-fit: cover; /* Ensures the image covers the div without distortion */
+    border-radius: 8px; /* Optional: Adds rounded corners */
 }
 
 h3 {
@@ -49,6 +56,16 @@ ul li {
     margin: 10px 0;
 }
 
+.github-stats,
+.contact,
+.games {
+    margin: 20px; /* Add margin for spacing */
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 footer {
     text-align: center;
     padding: 10px;
@@ -58,3 +75,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
