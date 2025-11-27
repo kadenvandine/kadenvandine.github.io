@@ -8,57 +8,63 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header-container">
-        <h1>Kaden VanDine</h1>
-	<!--<h2>ShadownNinja Games</h2>-->
-    </header>
+    
+    <div class="main-wrapper">
+        <header class="header-container">
+            <h1>Kaden VanDine</h1>
+            <p class="subtitle">Game Developer & Programmer</p>
+        </header>
 
-    <div class="content-container">
-        <div class="text-section">
-            <div class="bio">
-                <h3>About Me</h3>
-                <p>I'm a high school student passionate about game development. I love coding games that bring joy and excitement to players. In my spare time, I learn new programming languages and explore game design.</p>
-		<p>More stuff</p>
-		<p>More stuff</p>
+        <main class="content-container">
+            <div class="text-section">
+                <section class="card bio">
+                    <h3>About Me</h3>
+                    <p>I'm a high school student passionate about game development. I love coding games that bring joy and excitement to players. In my spare time, I learn new programming languages and explore game design.</p>
+                </section>
+
+                <section class="card interests">
+                    <h3>Interests</h3>
+                    <ul class="tags">
+                        <li>Game Design</li>
+                        <li>Programming</li>
+                        <li>Game Mechanics</li>
+                        <li>Data Science</li>
+                        <li>Baseball</li>
+                    </ul>
+                </section>
             </div>
 
-            <div class="interests">
-                <h3>Interests</h3>
+            <div class="banner">
+                <img src="shadowninjagames.png" alt="ShadowNinja Games Banner">
+            </div>
+        </main>
+
+        <section class="full-width-section">
+            <div class="card github-stats">
+                <h3>GitHub Stats</h3>
+                <div class="img-responsive">
+                    <img src="https://github-readme-stats.vercel.app/api?username=kadenvandine&show_icons=true&theme=radical" alt="GitHub Stats">
+                </div>
+            </div>
+            
+            <div class="card games">
+                <h3>Play My Games</h3>
                 <ul>
-                    <li>Game Design</li>
-                    <li>Programming</li>
-                    <li>Game Mechanics</li>
-                    <li>Data Science</li>
-                    <li>Baseball</li>
+                    <li><a href="game1/index.html" class="btn" target="_blank">Play Game 1</a></li>
                 </ul>
             </div>
-        </div>
-
-        <div class="banner">
-            <img src="shadowninjagames.png" alt="Game Development Banner">
-        </div>
+            
+            <div class="card contact">
+                <h3>Contact Me</h3>
+                <p>Check out my projects or log an issue.</p>
+                <a href="https://github.com/kadenvandine/kadenvandine.github.io/issues" class="link-highlight">Visit GitHub Profile</a>
+            </div>
+        </section>
     </div>
 
-    <section class="github-stats">
-        <h3>GitHub Stats</h3>
-        <img src="https://github-readme-stats.vercel.app/api?username=kadenvandine&show_icons=true&theme=radical" alt="GitHub Stats">
-    </section>
-    
-    <section class="games">
-        <h3>Play My Games</h3>
-        <ul>
-            <li><a href="game1/index.html" target="_blank">Game 1</a></li>
-        </ul>
-    </section>
-    
-    <section class="contact">
-        <h3>Contact Me</h3>
-        <p><a href="https://github.com/kadenvandine/kadenvandine.github.io/issues">GitHub</a></p>
-    </section>
-    
     <footer>
-        <p>&copy; 2025 Kaden VanDine</p>
+        <p>&copy; 2025 Kaden VanDine | Built with code</p>
     </footer>
+
 </body>
 </html>
-
